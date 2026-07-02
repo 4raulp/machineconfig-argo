@@ -1,0 +1,20 @@
+apiVersion: machineconfiguration.openshift.io/v1
+kind: MachineConfig
+metadata:
+  name: 61-worker-swissre
+  labels:
+    machineconfiguration.openshift.io/role: worker
+  annotations:
+    argocd.argoproj.io/sync-options: ServerSideApply=true,Validate=false
+spec:
+  config:
+    ignition:
+      version: 3.2.0
+    storage:
+      files:
+      - path: /etc/motd
+        filesystem: root
+        mode: 0444
+        overwrite: true
+        contents:
+          source: https://raw.githubusercontent.com/anishrana2001/Openshift/refs/heads/main/README.md
