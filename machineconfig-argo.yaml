@@ -17,4 +17,4 @@ spec:
         mode: 0444
         overwrite: true
         contents:
-          source: data:text/plain;charset=utf-8;base64,VGhhbmtzIGZvciB3YXRjaGluZyBteSBjb250ZW50IGZyb20gImRldm9wcy13YWxhIiBZb3V0dWJlIENoYW5uZWwuCkVtYWlsIElEOiBhbmlzaHJhbmEyMDAxQHJlZGlmZm1haWwuY29tCg==
+          source: data:;base64,VGhhbmtzIGZvciB3YXRjaGluZyBteSBjb250ZW50IGZyb20gImRldm9wcy13YWxhIiBZb3V0dWJlIENoYW5uZWwuCkVtYWlsIElEOiBhbmlzaHJhbmEyMDAxQHJlZGlmZm1haWwuY29tCg==
